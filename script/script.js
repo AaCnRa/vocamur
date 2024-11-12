@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
     if(location=="index.html" || location==""){
         header.innerHTML = "\
-        <div><h1>RIASEC Project</h1></div>\
+        <div class=\"p-title\"><h1>RIASEC Project</h1></div>\
         <div>\
             <div class=\"link\"><a href=\"login.html\">Se connecter</a></div>\
         </div>\
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded",function(){
     }
     else if(location=="login.html"){
         header.innerHTML = "\
-        <div><h1>RIASEC Project</h1></div>\
+        <div class=\"p-title\"><h1>RIASEC Project</h1></div>\
         <div>\
             <div class=\"link\"><a href=\"index.html\">Revenir à l'accueil</a></div>\
         </div>\
@@ -34,11 +34,12 @@ document.addEventListener("DOMContentLoaded",function(){
     }
     else{
         header.innerHTML = "\
-        <div><h1>RIASEC Project</h1></div>\
+        <div class=\"p-title\"><h1>RIASEC Project</h1></div>\
         <div>\
-            <div class=\"link\"><a href=\"riasec.html\">Accueil</a></div>\
+            <div class=\"link\"><a href=\"home.html\">Accueil</a></div>\
             <div class=\"link\"><a href=\"test.html\">Passer le test</a></div>\
-            <div class=\"link\"><a href=\"nous.html\">Nous connaître</a></div>\
+            <div class=\"link\"><a href=\"riasec.html\">RIASEC</a></div>\
+            <div class=\"link\"><a href=\"nous.html\">Nous</a></div>\
         </div>\
         ";
     }

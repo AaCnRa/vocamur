@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RIASEC Project - Login</title>
     <script src="script/script.js"></script>
+    <script src="script/script-login.js"></script>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/general.css">
 </head>
 <body>
-    <div class="header"></div>
-    <div class="main"></div>
-    <div class="footer"></div>
+    <section class="header"></section>
+    <section class="main">
+        <div class="auth-container">
+            <h2>Authentification</h2>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Nom d'utilisateur" required>
+                <input type="password" id="password" placeholder="Mot de passe" required>
+                <button type="submit">Se connecter</button>
+            </form>
+        </div>
+    </section>
+    <section class="footer"></section>
 </body>
 </html>
