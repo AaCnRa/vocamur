@@ -1,6 +1,7 @@
+*{
+    text-align: initial;
+}
 .header,.footer{
-    color: #fff;
-    background-color: var(--first);
     display: flex;
     justify-content: space-evenly;
     
@@ -11,25 +12,31 @@
         height: 100%;
         width: 100%;
         text-decoration: none;
-        color: #fff;
+        color: inherit;
     }
-    a:hover{
-        background-color:var(--third);
-    }
+    
     div.link{
         width: 100%;
         height: 100%;
     }
+    a{
+        justify-content: center;
+    }
 }
 
-a{
-    justify-content: center;
-    font-weight: bold;
-}
+
 a:hover{
     text-shadow: 0px 0px white;
 }
 .header{
+    color: #fff;
+    background-color: var(--first);
+    a{
+        font-weight: bold;
+    }
+    a:hover{
+        background-color:var(--third);
+    }
     >div{
         flex: 2 0;
         display: flex;
@@ -39,36 +46,79 @@ a:hover{
     }
 }
 
+.footer{
+    font-style: italic;
+    background-color:var(--second);
+    color:grey;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    text-shadow: 0px 0px 1px;
+    padding: 0 10px 10px;
+    a:hover{
+        font-weight: initial;
+    }
+    div{
+        /*width: 100%;*/
+        max-width: 500px;
+    }
+    .contact{
+        display: flex;
+        justify-content: space-evenly;
+
+        a{
+            padding: 0px 5px;
+        }
+    }    
+}
+
 .main{
     flex-grow: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     justify-items: center;
     align-items: center;
-    color: #fff;
+    padding: 10px 0px;
+    /*color: #fff;*/
     background-color: var(--second);
+    overflow:scroll;
 }
 
+.auth-container{
+    height: max-content;
+    border-radius: 15px;
+}
+
+.content{
+    background-color: var(--content);
+    padding: 40px 40px;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.other{
+    width: 800px;
+    flex-grow: 1;
+}
+.content>div{
+    width: 100%;
+}
+
+@media (max-width:900px) {
+    .content{
+        width: 100%;
+    }
+}
 body{
+    background-color: var(--second);
     font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     justify-items: center;
-}
-
-.p-title{
-    /*width: 50%;*/
-}
-
-.auth-container {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 40px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    height: max-content;
 }
 
 h2 {

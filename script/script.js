@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded",function(){
     const footer = this.getElementsByClassName('footer')[0];
     const main = this.getElementsByClassName('main')[0];
 
-    footer.innerHTML = "<h1>Essai</h1>";
+    //footer.innerHTML = "<p style=\"test-align:right;\">Ce site a été</p>";
 
     if(location=="index.html" || location==""){
         header.innerHTML = "\
@@ -44,6 +44,14 @@ document.addEventListener("DOMContentLoaded",function(){
         ";
     }
 
+    footer.innerHTML="\
+    <div>Ce site a été développé par Coriolan.</div>\
+        <div class=\"contact\">\
+            <a href=\"mailto:andriamiharinjaracoriolanr.acr@gmail.com\">Mail</a>\
+            <a href=\"tel:+261325176665\">Téléphone</a>\
+            <a href=\"http://web.facebook.com\">Facebook</a>\
+        </div>\
+    ";
     /*document.body.appendChild(header);
     this.body.appendChild(main);
     this.body.appendChild(footer);*/

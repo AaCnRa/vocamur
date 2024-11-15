@@ -5,12 +5,805 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RIASEC Project - Test</title>
     <script src="script/script.js"></script>
+    <script src="script/test.js"></script>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/general.css">
 </head>
 <body>
     <div class="header"></div>
-    <div class="main"></div>
-    <div class="footer"></div>
+    <div class="main">
+        <div class="content other" id="test">
+            <div id="activity" class="class">
+                <h2 class="head-class">Intérêts et activités</h2>
+                <p class="desc-class">
+                    Voici une liste d’activités. Faites une croix dans les cases qui se rapportent aux activités que vous aimez ou
+                    que vous aimeriez pratiquer. Il est important de ne pas faire de croix si l’activité vous déplaît ou vous laisse
+                    indifférent(e).
+                </p>
+                
+                <dl>
+                    <dt>Pour remplir cette partie:</dt>
+                    <ul style="list-style: square;">
+                        <dd>
+                            <li><b>Considérez que vous avez les capacités, les connaissances et la
+                            formation nécessaires pour effectuer ces activités.</b></li>
+                        </dd>
+                        <dd>
+                            <li>Tenez compte uniquement de vos goûts.</li>
+                        </dd>
+                    </ul>
+                </dl>
+
+                <form class="realistic type">
+                    <h3>Réaliste</h3>
+                    <input type="button" value="0" id="iar">
+                    <table>
+                        <tr>
+                            <td>1. Planter, entretenir des arbres, des arbustes, des fleurs ou cultiver le sol.</td>
+                            <td><input type="checkbox" class="iar test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>2. Effectuer des réparations électriques ou électroniques.</td>
+                            <td><input type="checkbox" class="iar test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>3. Faire de la couture.</td>
+                            <td><input type="checkbox" class="iar test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>4. Réparer des automobiles.</td>
+                            <td><input type="checkbox" class="iar test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>5. Fabriquer des objets avec du bois.</td>
+                            <td><input type="checkbox" class="iar test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>6. Conduire un camion ou un tracteur.</td>
+                            <td><input type="checkbox" class="iar test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>7. Faire des déménagements.</td>
+                            <td><input type="checkbox" class="iar test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>8. Entretenir ou réparer de la plomberie ou des systèmes de ventilation.</td>
+                            <td><input type="checkbox" class="iar test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>9. Travailler avec des animaux et en prendre soin.</td>
+                            <td><input type="checkbox" class="iar test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>10. Travailler à l’extérieur (exposer à la pluie, au soleil, au froid).</td>
+                            <td><input type="checkbox" class="iar test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>11. Travailler avec de la machinerie.</td>
+                            <td><input type="checkbox" class="iar test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>12. Préparer des repas, des banquets.</td>
+                            <td><input type="checkbox" class="iar test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>13. Travailler avec des outils tels que tournevis, ciseaux, pince, etc.</td>
+                            <td><input type="checkbox" class="iar test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>14. Effectuer des travaux de peinture.</td>
+                            <td><input type="checkbox" class="iar test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>15. Suivre un cours de dessin mécanique.</td>
+                            <td><input type="checkbox" class="iar test-input"></td>
+                        </tr>
+                    </table>
+                    <input type="reset" value="Réinitialiser pour Réaliste">
+                </form>
+                
+                <form class="investigative type">
+                    <h3>Investigateur</h3>
+                    <input type="button" value="0" id="iai">
+                    <table>
+                        <tr>
+                            <td>1. Lire des revues scientifiques ou spécialisées.</td>
+                            <td><input type="checkbox" class="iai test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>2. Faire des expériences sur le comportement des animaux.</td>
+                            <td><input type="checkbox" class="iai test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>3. Effectuer des analyses en laboratoire.</td>
+                            <td><input type="checkbox" class="iai test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>4. Suivre des cours de sciences.</td>
+                            <td><input type="checkbox" class="iai test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>5. Établir un diagnostic de maladie chez des patients.</td>
+                            <td><input type="checkbox" class="iai test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>6. Expérimenter de nouvelles cultures végétales.</td>
+                            <td><input type="checkbox" class="iai test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>7. Créer une nouvelle source d’énergie.</td>
+                            <td><input type="checkbox" class="iai test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>8. Concevoir un barrage électrique, un pont, une autoroute, etc.</td>
+                            <td><input type="checkbox" class="iai test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>9. Résoudre des problèmes mathématiques.</td>
+                            <td><input type="checkbox" class="iai test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>10. Faire des recherches scientifiques pour satisfaire ma curiosité.</td>
+                            <td><input type="checkbox" class="iai test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>11. Produire un rapport sur l’évolution économique d’une région.</td>
+                            <td><input type="checkbox" class="iai test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>12. Concevoir un plan de reboisement.</td>
+                            <td><input type="checkbox" class="iai test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>13. Planifier des soins ou des traitements à donner à des patients.</td>
+                            <td><input type="checkbox" class="iai test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>14. Faire des recherches sur les civilisations anciennes.</td>
+                            <td><input type="checkbox" class="iai test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>15. Faire de la programmation informatique.</td>
+                            <td><input type="checkbox" class="iai test-input"></td>
+                        </tr>
+                    </table>
+                    <input type="reset" value="Réinitialiser pour Investigateur">
+                </form>
+                
+                <form class="artistic type">
+                    <h3>Artiste</h3>
+                    <input type="button" value="0" id="iaa">
+                    <table>
+                        
+                        <tr>
+                            <td>1. Écrire des romans, des articles de journaux.</td>
+                            <td><input type="checkbox" class="iaa test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>2. Dessiner des meubles, des plans de maison, des décors, etc.</td>
+                            <td><input type="checkbox" class="iaa test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>3. Interpréter ou mettre en scène une pièce de théâtre</td>
+                            <td><input type="checkbox" class="iaa test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>4. Jouer dans un orchestre</td>
+                            <td><input type="checkbox" class="iaa test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>5. Créer des pièces d’artisanat.</td>
+                            <td><input type="checkbox" class="iaa test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>6. Imaginer de nouvelles façons de faire les choses.</td>
+                            <td><input type="checkbox" class="iaa test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>7. Embellir l’environnement.</td>
+                            <td><input type="checkbox" class="iaa test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>8. Créer une nouvelle coupe de cheveux ou de nouveau vêtement.</td>
+                            <td><input type="checkbox" class="iaa test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>9. Faire de la photographie publicitaire ou artistique.</td>
+                            <td><input type="checkbox" class="iaa test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>10. Concevoir et réaliser des arrangements de fleurs.</td>
+                            <td><input type="checkbox" class="iaa test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>11. Imaginer une bande dessinée.</td>
+                            <td><input type="checkbox" class="iaa test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>12. Peindre des tableaux pour une exposition.</td>
+                            <td><input type="checkbox" class="iaa test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>13. Décorer des vitrines de magasins.</td>
+                            <td><input type="checkbox" class="iaa test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>14. Écrire des critiques de pièces de théâtre, de films, de livres, etc.</td>
+                            <td><input type="checkbox" class="iaa test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>15. Apprendre des langues.</td>
+                            <td><input type="checkbox" class="iaa test-input"></td>
+                        </tr>
+                    </table>
+                    <input type="reset" value="Réinitialiser pour Artiste">
+                </form>
+
+                <form class="social type">
+                    <h2>Social</h2>
+                    <input type="button" value="0" id="ias">
+                    <table>
+                        <tr>
+                            <td>1. S’engager dans des organismes sociaux ou communautaires.</td>
+                            <td><input type="checkbox" class="ias test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>2. Rencontrer des gens pour les aider à résoudre leurs problèmes personnels.</td>
+                            <td><input type="checkbox" class="ias test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>3. Travailler dans une garderie d’enfants.</td>
+                            <td><input type="checkbox" class="ias test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>4. Enseigner aux enfants, aux adolescents, aux adultes.</td>
+                            <td><input type="checkbox" class="ias test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>5. Aider les gens à prendre conscience de leurs possibilités.</td>
+                            <td><input type="checkbox" class="ias test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>6. Animer un groupe.</td>
+                            <td><input type="checkbox" class="ias test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>7. Agir comme hôte / hôtesse lors d’un congrès.</td>
+                            <td><input type="checkbox" class="ias test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>8. Tenir un kiosque d’information.</td>
+                            <td><input type="checkbox" class="ias test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>9. Offrir un service d’aide téléphonique.</td>
+                            <td><input type="checkbox" class="ias test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>10. Consulter les gens sur leurs besoins (sondage, enquête, etc.).</td>
+                            <td><input type="checkbox" class="ias test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>11. S’occuper des personnes handicapées physiquement.</td>
+                            <td><input type="checkbox" class="ias test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>12. Soigner un malade.</td>
+                            <td><input type="checkbox" class="ias test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>13. Aider les délinquants à se réhabiliter.</td>
+                            <td><input type="checkbox" class="ias test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>14. Organiser des loisirs.</td>
+                            <td><input type="checkbox" class="ias test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>15. Échanger des idées avec d’autres personnes.</td>
+                            <td><input type="checkbox" class="ias test-input"></td>
+                        </tr>
+                    </table>
+                    <input type="reset" value="Réinitialiser pour Social">
+                </form>
+
+                <form class="enterprising type">
+                    <h3>Entrepreneur</h3>
+                    <input type="button" value="0" id="iae">
+                    <table>
+                        <tr>
+                            <td>1. Vendre un produit ou une idée.</td>
+                            <td><input type="checkbox" class="iae test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>2. Mettre sur pied son propre commerce.</td>
+                            <td><input type="checkbox" class="iae test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>3. Donner des conférences.</td>
+                            <td><input type="checkbox" class="iae test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>4. Acheter pour le compte d’un grand magasin.</td>
+                            <td><input type="checkbox" class="iae test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>5. Marchander.</td>
+                            <td><input type="checkbox" class="iae test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>6. Diriger du personnel.</td>
+                            <td><input type="checkbox" class="iae test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>7. Défendre une cause.</td>
+                            <td><input type="checkbox" class="iae test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>8. Faire de la sélection de candidats.</td>
+                            <td><input type="checkbox" class="iae test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>9. S’engager à fond dans des activités sociales au travail ou dans son quartier.</td>
+                            <td><input type="checkbox" class="iae test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>10. Diriger une entreprise financière.</td>
+                            <td><input type="checkbox" class="iae test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>11. Lancer un nouveau produit.</td>
+                            <td><input type="checkbox" class="iae test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>12. Fonder un club de consommateurs, une association de protection de
+                                l’environnement, une activité de récupération de papier.</td>
+                            <td><input type="checkbox" class="iae test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>13. Gérer un projet spécial.</td>
+                            <td><input type="checkbox" class="iae test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>14. Faire de la politique (municipal, scolaire, provincial)</td>
+                            <td><input type="checkbox" class="iae test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>15. Lancer un concours de promotion, une campagne de publicité.</td>
+                            <td><input type="checkbox" class="iae test-input"></td>
+                        </tr>
+                    </table>
+                    <input type="reset" value="Réinitialiser pour Entrepreneur">
+                </form>
+
+                <form class="conventional type">
+                    <h3>Conventionnel</h3>
+                    <input type="button" value="0" id="iac">
+                    <table>
+                        <tr>
+                            <td>1. Établir des comptes-rendus des dépenses.</td>
+                            <td><input type="checkbox" class="iac test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>2. Préparer des procès verbaux de réunions.</td>
+                            <td><input type="checkbox" class="iac test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>3. Tenir une caisse dans un établissement commercial ou financier.</td>
+                            <td><input type="checkbox" class="iac test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>4. Faire un inventaire et passer des commandes.</td>
+                            <td><input type="checkbox" class="iac test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>5. Manipuler un appareil à traitement de textes.</td>
+                            <td><input type="checkbox" class="iac test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>6. Maintenir un système de classement (archive, bibliothèque, bureau, etc.)</td>
+                            <td><input type="checkbox" class="iac test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>7. Garder mon espace de travail à l’ordre.</td>
+                            <td><input type="checkbox" class="iac test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>8. Faire des opérations mathématiques pour préparer des rapports ou faire la
+                                tenue de livres.</td>
+                            <td><input type="checkbox" class="iac test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>9. S’adonner à des activités régulières</td>
+                            <td><input type="checkbox" class="iac test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>10. Classer des lettres, des rapports, des dossiers.</td>
+                            <td><input type="checkbox" class="iac test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>11. Recevoir et faire des appels téléphoniques.</td>
+                            <td><input type="checkbox" class="iac test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>12. Vérifier des rapports financiers.</td>
+                            <td><input type="checkbox" class="iac test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>13. Faire fonctionner toutes sortes de machines de bureau.</td>
+                            <td><input type="checkbox" class="iac test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>14. Effectuer des tâches clairement définies.</td>
+                            <td><input type="checkbox" class="iac test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>15. Dactylographier ou réviser des lettres ou des rapports.</td>
+                            <td><input type="checkbox" class="iac test-input"></td>
+                        </tr>
+                    </table>
+                    <input type="reset" value="Réinitialiser pour Conventionnel">
+                </form>
+            </div>
+
+            <div id="occupation" class="class">
+                <h2 class="head-class">Intérêts et occupations</h2>
+                <p class="desc-class">
+                    Faites une croix dans les cases qui se rapportent aux professions qui vous conviendraient. Ne vous
+                    préoccupez pas de savoir si vous pouvez réussir dans tel métier ou dans telle profession, ni de votre
+                    préparation actuelle. Ne songez ni au salaire, ni à l’avancement mais demandez-vous si le travail en
+                    question est susceptible de vous plaire.
+                </p>
+                
+                <form class="realistic type">
+                    <h3>Réaliste</h3>
+                    <input type="button" value="0" id="ior">
+                    <table>
+                        <tr>
+                            <td>1. Mécanicien / mécanicienne d’auto</td>
+                            <td><input type="checkbox" class="ior test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>2. Éleveur / éleveuse de bétails</td>
+                            <td><input type="checkbox" class="ior test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>3. Technicien / technicienne dentaire</td>
+                            <td><input type="checkbox" class="ior test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>4. Travailleur / travailleuse de la construction (menuiserie)</td>
+                            <td><input type="checkbox" class="ior test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>5. Couturier / couturière en usine</td>
+                            <td><input type="checkbox" class="ior test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>6. Technicien / technicienne en aménagement de la faune</td>
+                            <td><input type="checkbox" class="ior test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>7. Horloger / horlogère</td>
+                            <td><input type="checkbox" class="ior test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>8. Technicien / technicienne du meuble et du bois ouvré (ébéniste)</td>
+                            <td><input type="checkbox" class="ior test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>9. Plombier / plombière</td>
+                            <td><input type="checkbox" class="ior test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>10. Technicien / technicienne en mécanique du bâtiment</td>
+                            <td><input type="checkbox" class="ior test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>11. Conducteur / conductrice d’autobus</td>
+                            <td><input type="checkbox" class="ior test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>12. Technicien / technicienne en entretien d’aéronefs</td>
+                            <td><input type="checkbox" class="ior test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>13. Réparateur/ réparatrice de télévision</td>
+                            <td><input type="checkbox" class="ior test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>14. Ingénieur / ingénieure civil</td>
+                            <td><input type="checkbox" class="ior test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>15. Cuisinier / cuisinière</td>
+                            <td><input type="checkbox" class="ior test-input"></td>
+                        </tr>
+                    </table>
+                    <input type="reset" value="Réinitialiser pour Réaliste">
+                </form>
+
+                <form class="investigative type">
+                    <h3>Investigateur</h3>
+                    <input type="button" value="0" id="ioi">
+                    <table>
+                        <tr>
+                            <td>1. Ingénieur / ingénieure en chimie, physique</td>
+                            <td><input type="checkbox" class="ioi test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>2. Technicien / technicienne en laboratoire médical</td>
+                            <td><input type="checkbox" class="ioi test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>3. Chercheur / chercheuse scientifique</td>
+                            <td><input type="checkbox" class="ioi test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>4. Technicien / technicienne en radiologie (rayon X)</td>
+                            <td><input type="checkbox" class="ioi test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>5. Biologiste</td>
+                            <td><input type="checkbox" class="ioi test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>6. Technicien / technicienne en informatique</td>
+                            <td><input type="checkbox" class="ioi test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>7. Médecin ou vétérinaire</td>
+                            <td><input type="checkbox" class="ioi test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>8. Technicien / technicienne en transformation des produits forestiers</td>
+                            <td><input type="checkbox" class="ioi test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>9. Météorologiste</td>
+                            <td><input type="checkbox" class="ioi test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>10. Astronome (étudie le mouvement des astres dans le ciel)</td>
+                            <td><input type="checkbox" class="ioi test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>11. Technicien / technicienne en dessin conception mécanique</td>
+                            <td><input type="checkbox" class="ioi test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>12. Économiste</td>
+                            <td><input type="checkbox" class="ioi test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>13. Technicien / -cienne en procédés métallurgiques (spécialiste dans la
+                                transformation des métaux)</td>
+                            <td><input type="checkbox" class="ioi test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>14. Botaniste</td>
+                            <td><input type="checkbox" class="ioi test-input"></td>
+                        </tr>
+                        <tr>
+                            <td>15. Technicien / -cienne en chimie analytique (analyse de nouveaux produits
+                                chimiques)</td>
+                            <td><input type="checkbox" class="ioi test-input"></td>
+                        </tr>
+                    </table>
+                    <input type="reset" value="Réinitialiser pour Investigateur">
+                </form>
+
+                <form class="artistic type">
+                    <h3>Artiste</h3>
+                    <input type="button" value="0" id="ioa">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox" class="ioa test-input"></td>
+                        </tr>
+                    </table>
+                    <input type="reset" value="Réinitialiser pour Artiste">
+                </form>
+
+                <form class="social type">
+                    <h3>Social</h3>
+                    <input type="button" value="0" id="ios">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox" class="ios test-input"></td>
+                        </tr>
+                    </table>
+                    <input type="reset" value="Réinitialiser pour Social">
+                </form>
+
+                <form class="enterprising type">
+                    <h3>Entrepreneur</h3>
+                    <input type="button" value="0" id="ioe">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox" class="ioe test-input"></td>
+                        </tr>
+                    </table>
+                    <input type="reset" value="Réinitialiser pour Entrepreneur">
+                </form>
+
+                <form class="conventional type">
+                    <h3>Conventionnel</h3>
+                    <input type="button" value="0" id="ioc">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox" class="ioc test-input"></td>
+                        </tr>
+                    </table>
+                    <input type="reset" value="Réinitialiser pour Conventionnel">
+                </form>
+            </div>
+
+            <div id="ability" class="class">
+                <h2 class="head-class">Aptitudes</h2>
+                <p class="desc-class">
+
+                </p>
+
+                <form class="realistic type">
+                    <h3>Réaliste</h3>
+                    <input type="button" value="0" id="ar">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox" class="ar test-input"></td>
+                        </tr>
+                    </table>
+                    <input type="reset" value="Réinitialiser pour Réaliste">
+                </form>
+
+                <form class="investigative type">
+                    <h3>Investigateur</h3>
+                    <input type="button" value="0" id="ai">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox" class="ai test-input"></td>
+                        </tr>
+                    </table>
+                    <input type="reset" value="Réinitialiser pour Investigateur">
+                </form>
+
+                <form class="artistic type">
+                    <h3>Artiste</h3>
+                    <input type="button" value="0" id="aa">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox" class="aa test-input"></td>
+                        </tr>
+                    </table>
+                    <input type="reset" value="Réinitialiser pour Artiste">
+                </form>
+
+                <form class="social type">
+                    <h3>Social</h3>
+                    <input type="button" value="0" id="as">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox" class="as test-input"></td>
+                        </tr>
+                    </table>
+                    <input type="reset" value="Réinitialiser pour Social">
+                </form>
+
+                <form class="enterprising type">
+                    <h3>Entrepreneur</h3>
+                    <input type="button" value="0" id="ae">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox" class="ae test-input"></td>
+                        </tr>
+                    </table>
+                    <input type="reset" value="Réinitialiser pour Entrepreneur">
+                </form>
+
+                <form class="conventional type">
+                    <h3>Conventionnel</h3>
+                    <input type="button" value="0" id="ac">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox" class="ac test-input"></td>
+                        </tr>
+                    </table>
+                    <input type="reset" value="Réinitialiser pour Conventionnel">
+                </form>
+            </div>
+            
+            <div id="personality" class="class">
+                <h2 class="head-class">Personnalités</h2>
+                <p class="desc-class">
+
+                </p>
+
+                <form class="realistic type">
+                    <h3>Réaliste</h3>
+                    <input type="button" value="0" id="pr">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox" class="pr test-input"></td>
+                        </tr>
+                    </table>
+                    <input type="reset" value="Réinitialiser pour Réaliste">
+                </form>
+
+                <form class="investigative type">
+                    <h3>Investigateur</h3>
+                    <input type="button" value="0" id="pi">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox" class="pi test-input"></td>
+                        </tr>
+                    </table>
+                    <input type="reset" value="Réinitialiser pour Investigateur">
+                </form>
+
+                <form class="artistic type">
+                    <h3>Artiste</h3>
+                    <input type="button" value="0" id="pa">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox" class="pa test-input"></td>
+                        </tr>
+                    </table>
+                    <input type="reset" value="Réinitialiser pour Artiste">
+                </form>
+
+                <form class="social type">
+                    <h3>Social</h3>
+                    <input type="button" value="0" id="ps">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox" class="ps test-input"></td>
+                        </tr>
+                    </table>
+                    <input type="reset" value="Réinitialiser pour Social">
+                </form>
+
+                <form class="enterprising type">
+                    <h3>Entrepreneur</h3>
+                    <input type="button" value="0" id="pe">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox" class="pe test-input"></td>
+                        </tr>
+                    </table>
+                    <input type="reset" value="Réinitialiser pour Entrepreneur">
+                </form>
+
+                <form class="conventional type">
+                    <h3>Conventionnel</h3>
+                    <input type="button" value="0" id="pc">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td><input type="checkbox" class="pc test-input"></td>
+                        </tr>
+                    </table>
+                    <input type="reset" value="Réinitialiser pour Conventionnel">
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer">
+        
+    </div>
 </body>
 </html>
