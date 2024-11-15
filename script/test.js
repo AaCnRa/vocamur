@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded",function(){
+    var viar,viai,viaa,vias,viae,viac,vior,vioi,vioa,vios,vioe,vioc,vapr,vapi,vapa,vaps,vape,vapc,vper,vpei,vpea,vpes,vpee,vpec;
+
     const iar = this.getElementsByClassName('iar');
     const iarButton = this.getElementById('iar');
     const iai = this.getElementsByClassName('iai');
@@ -23,135 +25,72 @@ document.addEventListener("DOMContentLoaded",function(){
     const ioeButton = this.getElementById('ioe');
     const ioc = this.getElementsByClassName('ioc');
     const iocButton = this.getElementById('ioc');
-    const ar = this.getElementsByClassName('ar');
-    const arButton = this.getElementById('ar');
-    const ai = this.getElementsByClassName('ai');
-    const aiButton = this.getElementById('ai');
-    const aa = this.getElementsByClassName('aa');
-    const aaButton = this.getElementById('aa');
-    const as = this.getElementsByClassName('as');
-    const asButton = this.getElementById('as');
-    const ae = this.getElementsByClassName('ae');
-    const aeButton = this.getElementById('ae');
-    const ac = this.getElementsByClassName('ac');
-    const acButton = this.getElementById('ac');
-    const pr = this.getElementsByClassName('pr');
-    const prButton = this.getElementById('pr');
-    const pi = this.getElementsByClassName('pi');
-    const piButton = this.getElementById('pi');
-    const pa = this.getElementsByClassName('pa');
-    const paButton = this.getElementById('pa');
-    const ps = this.getElementsByClassName('ps');
-    const psButton = this.getElementById('ps');
-    const pe = this.getElementsByClassName('pe');
-    const peButton = this.getElementById('pe');
-    const pc = this.getElementsByClassName('pc');
-    const pcButton = this.getElementById('pc');
+    const apr = this.getElementsByClassName('ar');
+    const aprButton = this.getElementById('ar');
+    const api = this.getElementsByClassName('ai');
+    const apiButton = this.getElementById('ai');
+    const apa = this.getElementsByClassName('aa');
+    const apaButton = this.getElementById('aa');
+    const aps = this.getElementsByClassName('as');
+    const apsButton = this.getElementById('as');
+    const ape = this.getElementsByClassName('ae');
+    const apeButton = this.getElementById('ae');
+    const apc = this.getElementsByClassName('ac');
+    const apcButton = this.getElementById('ac');
+    const per = this.getElementsByClassName('pr');
+    const perButton = this.getElementById('pr');
+    const pei = this.getElementsByClassName('pi');
+    const peiButton = this.getElementById('pi');
+    const pea = this.getElementsByClassName('pa');
+    const peaButton = this.getElementById('pa');
+    const pes = this.getElementsByClassName('ps');
+    const pesButton = this.getElementById('ps');
+    const pee = this.getElementsByClassName('pe');
+    const peeButton = this.getElementById('pe');
+    const pec = this.getElementsByClassName('pc');
+    const pecButton = this.getElementById('pc');
     
-    countChecked(iarButton,iar);
-    countChecked(iaiButton,iai);
-    countChecked(iaaButton,iaa);
-    countChecked(iasButton,ias);
-    countChecked(iaeButton,iae);
-    countChecked(iacButton,iac);
-    countChecked(iorButton,ior);
-    countChecked(ioiButton,ioi);
-    countChecked(ioaButton,ioa);
-    countChecked(iosButton,ios);
-    countChecked(ioeButton,ioe);
-    countChecked(iocButton,ioc);
-    countChecked(arButton,ar);
-    countChecked(aiButton,ai);
-    countChecked(aaButton,aa);
-    countChecked(asButton,as);
-    countChecked(aeButton,ae);
-    countChecked(acButton,ac);
-    countChecked(prButton,pr);
-    countChecked(piButton,pi);
-    countChecked(paButton,pa);
-    countChecked(psButton,ps);
-    countChecked(peButton,pe);
-    countChecked(pcButton,pc);
-    
-    iarButton.addEventListener("click",function(){
-        countChecked(iarButton, iar)
-    });
-    iaiButton.addEventListener("click",function(){
-        countChecked(iaiButton, iai)
-    });
-    iaaButton.addEventListener("click",function(){
-        countChecked(iaaButton, iaa)
-    });
-    iasButton.addEventListener("click",function(){
-        countChecked(iasButton, ias)
-    });
-    iaeButton.addEventListener("click",function(){
-        countChecked(iaeButton, iae)
-    });
-    iacButton.addEventListener("click",function(){
-        countChecked(iacButton, iac)
-    });
-    iorButton.addEventListener("click",function(){
-        countChecked(iorButton, ior)
-    });
-    ioiButton.addEventListener("click",function(){
-        countChecked(ioiButton, ioi)
-    });
-    ioaButton.addEventListener("click",function(){
-        countChecked(ioaButton, ioa)
-    });
-    iosButton.addEventListener("click",function(){
-        countChecked(iosButton, ios)
-    });
-    ioeButton.addEventListener("click",function(){
-        countChecked(ioeButton, ioe)
-    });
-    iocButton.addEventListener("click",function(){
-        countChecked(iocButton, ioc)
-    });
-    arButton.addEventListener("click",function(){
-        countChecked(arButton, ar)
-    });
-    aiButton.addEventListener("click",function(){
-        countChecked(aiButton, ai)
-    });
-    aaButton.addEventListener("click",function(){
-        countChecked(aaButton, aa)
-    });
-    asButton.addEventListener("click",function(){
-        countChecked(asButton, as)
-    });
-    aeButton.addEventListener("click",function(){
-        countChecked(aeButton, ae)
-    });
-    acButton.addEventListener("click",function(){
-        countChecked(acButton, ac)
-    });
-    prButton.addEventListener("click",function(){
-        countChecked(prButton, pr)
-    });
-    piButton.addEventListener("click",function(){
-        countChecked(piButton, pi)
-    });
-    paButton.addEventListener("click",function(){
-        countChecked(paButton, pa)
-    });
-    psButton.addEventListener("click",function(){
-        countChecked(psButton, ps)
-    });
-    peButton.addEventListener("click",function(){
-        countChecked(peButton, pe)
-    });
-    pcButton.addEventListener("click",function(){
-        countChecked(pcButton, pc)
-    });
-    
-})
-async function countChecked(button,list){
-    let iar = 0;
-    for(let i=0;i<list.length;i++){
-        if(list[i].checked)iar++;
-    }
-    button.value=iar;
+    const submit = this.getElementById('submit-test');
+    const result = this.getElementById('result');
 
+    eventListener(iarButton,iar,viar);
+    eventListener(iaiButton,iai,viai);
+    eventListener(iaaButton,iaa,viaa);
+    eventListener(iasButton,ias,vias);
+    eventListener(iaeButton,iae,viae);
+    eventListener(iacButton,iac,viac);
+    eventListener(iorButton,ior,vior);
+    eventListener(ioiButton,ioi,vioi);
+    eventListener(ioaButton,ioa,vioa);
+    eventListener(iosButton,ios,vios);
+    eventListener(ioeButton,ioe,vioe);
+    eventListener(iocButton,ioc,vioc);
+    eventListener(aprButton,apr,vapr);
+    eventListener(apiButton,api,vapi);
+    eventListener(apaButton,apa,vapa);
+    eventListener(apsButton,aps,vaps);
+    eventListener(apeButton,ape,vape);
+    eventListener(apcButton,apc,vapc);
+    eventListener(perButton,per,vper);
+    eventListener(peiButton,pei,vpei);
+    eventListener(peaButton,pea,vpea);
+    eventListener(pesButton,pes,vpes);
+    eventListener(peeButton,pee,vpee);
+    eventListener(pecButton,pec,vpec);
+})
+
+async function countChecked(button,list,value){
+    value = 0;
+    for(let i=0;i<list.length;i++){
+        value+=list[i].type=="checkbox"?list[i].checked:parseInt(list[i].value);
+    }
+    button.value=value;
+    //console.log(value);
+}
+async function eventListener(button,list,value){
+    //console.log(list);
+    countChecked(button,list,value);
+    button.addEventListener("click",function(){
+        countChecked(button,list,value);
+    });
 }
