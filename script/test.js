@@ -52,7 +52,10 @@ document.addEventListener("DOMContentLoaded",function(){
     
     const submit = this.getElementById('submit-test');
     const result = this.getElementById('result');
-
+    const cells = this.getElementById('result-table').getElementsByTagName('td');
+    
+    
+    //console.log(cells);
     eventListener(iarButton,iar,viar);
     eventListener(iaiButton,iai,viai);
     eventListener(iaaButton,iaa,viaa);
@@ -77,6 +80,64 @@ document.addEventListener("DOMContentLoaded",function(){
     eventListener(pesButton,pes,vpes);
     eventListener(peeButton,pee,vpee);
     eventListener(pecButton,pec,vpec);
+
+    submit.addEventListener("click",function(){
+        countChecked(iarButton,iar,viar);
+        countChecked(iaiButton,iai,viai);
+        countChecked(iaaButton,iaa,viaa);
+        countChecked(iasButton,ias,vias);
+        countChecked(iaeButton,iae,viae);
+        countChecked(iacButton,iac,viac);
+        countChecked(iorButton,ior,vior);
+        countChecked(ioiButton,ioi,vioi);
+        countChecked(ioaButton,ioa,vioa);
+        countChecked(iosButton,ios,vios);
+        countChecked(ioeButton,ioe,vioe);
+        countChecked(iocButton,ioc,vioc);
+        countChecked(aprButton,apr,vapr);
+        countChecked(apiButton,api,vapi);
+        countChecked(apaButton,apa,vapa);
+        countChecked(apsButton,aps,vaps);
+        countChecked(apeButton,ape,vape);
+        countChecked(apcButton,apc,vapc);
+        countChecked(perButton,per,vper);
+        countChecked(peiButton,pei,vpei);
+        countChecked(peaButton,pea,vpea);
+        countChecked(pesButton,pes,vpes);
+        countChecked(peeButton,pee,vpee);
+        countChecked(pecButton,pec,vpec);
+
+        cells[0].innerHTML=iarButton.value;
+        cells[1].innerHTML=iaiButton.value;
+        cells[2].innerHTML=iaaButton.value;
+        cells[3].innerHTML=iasButton.value;
+        cells[4].innerHTML=iaeButton.value;
+        cells[5].innerHTML=iacButton.value;
+        cells[6].innerHTML=iorButton.value;
+        cells[7].innerHTML=ioiButton.value;
+        cells[8].innerHTML=ioaButton.value;
+        cells[9].innerHTML=iosButton.value;
+        cells[10].innerHTML=ioeButton.value;
+        cells[11].innerHTML=iocButton.value;
+        cells[12].innerHTML=aprButton.value;
+        cells[13].innerHTML=apiButton.value;
+        cells[14].innerHTML=apaButton.value;
+        cells[15].innerHTML=apsButton.value;
+        cells[16].innerHTML=apeButton.value;
+        cells[17].innerHTML=apcButton.value;
+        cells[18].innerHTML=perButton.value;
+        cells[19].innerHTML=peiButton.value;
+        cells[20].innerHTML=peaButton.value;
+        cells[21].innerHTML=pesButton.value;
+        cells[22].innerHTML=peeButton.value;
+        cells[23].innerHTML=pecButton.value;
+        cells[24].innerHTML=parseInt(cells[0].innerHTML)+parseInt(cells[6].innerHTML)+parseInt(cells[12].innerHTML)+parseInt(cells[18].innerHTML);
+        cells[25].innerHTML=parseInt(cells[1].innerHTML)+parseInt(cells[7].innerHTML)+parseInt(cells[13].innerHTML)+parseInt(cells[19].innerHTML);
+        cells[26].innerHTML=parseInt(cells[2].innerHTML)+parseInt(cells[8].innerHTML)+parseInt(cells[14].innerHTML)+parseInt(cells[20].innerHTML);
+        cells[27].innerHTML=parseInt(cells[3].innerHTML)+parseInt(cells[9].innerHTML)+parseInt(cells[15].innerHTML)+parseInt(cells[21].innerHTML);
+        cells[28].innerHTML=parseInt(cells[4].innerHTML)+parseInt(cells[10].innerHTML)+parseInt(cells[16].innerHTML)+parseInt(cells[22].innerHTML);
+        cells[29].innerHTML=parseInt(cells[5].innerHTML)+parseInt(cells[11].innerHTML)+parseInt(cells[17].innerHTML)+parseInt(cells[23].innerHTML);
+    })
 })
 
 async function countChecked(button,list,value){

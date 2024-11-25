@@ -13,7 +13,7 @@
     <div class="header"></div>
     <div class="main">
         <div class="content other" id="test">
-            <div id="activity" class="class">
+            <div id="activity" class="class content-div">
                 <h2 class="head-class">Intérêts et activités</h2>
                 <p class="desc-class">
                     Voici une liste d’activités. Faites une croix dans les cases qui se rapportent aux activités que vous aimez ou
@@ -21,7 +21,7 @@
                     indifférent(e).
                 </p>
                 
-                <dl>
+                <p>
                     <dt>Pour remplir cette partie:</dt>
                     <ul style="list-style: square;">
                         <dd>
@@ -32,7 +32,7 @@
                             <li>Tenez compte uniquement de vos goûts.</li>
                         </dd>
                     </ul>
-                </dl>
+                </p>
 
                 <form class="realistic type">
                     <h3>Réaliste</h3>
@@ -446,7 +446,7 @@
                 </form>
             </div>
 
-            <div id="occupation" class="class">
+            <div id="occupation" class="class content-div">
                 <h2 class="head-class">Intérêts et occupations</h2>
                 <p class="desc-class">
                     Faites une croix dans les cases qui se rapportent aux professions qui vous conviendraient. Ne vous
@@ -866,7 +866,7 @@
                 </form>
             </div>
 
-            <div id="ability" class="class">
+            <div id="ability" class="class content-div">
                 <h2 class="head-class">Aptitudes</h2>
                 <p class="desc-class">
                     Voici une liste d’aptitudes, d’habiletés, de talents qui sont en rapport avec des occupations.
@@ -1175,10 +1175,12 @@
                 </form>
             </div>
             
-            <div id="personality" class="class">
+            <div id="personality" class="class content-div">
                 <h2 class="head-class">Personnalité</h2>
                 <p class="desc-class">
-
+                    Voici une liste de traits de caractère, d’attitudes, de tendances personnelles. Faites une croix dans la case
+correspondant aux énoncés qui s’appliquent à vous, qui décrivent le plus honnêtement possible votre
+façon d’agir.
                 </p>
 
                 <form class="realistic type">
@@ -1483,13 +1485,13 @@
 
             <input type="submit" value="Soumettre" id="submit-test">
             
-            <div id="result" class="class">
+            <div id="result" class="class content-div">
                 <h2 class="head-class">Compilation du profil personnel</h2>
                 <p class="desc-class">
 
                 </p>
                 <table  style="width: 100%;" id="result-table">
-                    <tr>
+                    <thead>
                         <th style="width: 70%;"></th>
                         <th style="width: 5%;">R</th>
                         <th style="width: 5%;">I</th>
@@ -1497,7 +1499,7 @@
                         <th style="width: 5%;">S</th>
                         <th style="width: 5%;">E</th>
                         <th style="width: 5%;">C</th>
-                    </tr>
+                    </thead>
                     <tr>
                         <th>Intérêts et Activités</th>
                         <td></td>
@@ -1527,6 +1529,15 @@
                     </tr>
                     <tr>
                         <th>Personnalité</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
                         <td></td>
                         <td></td>
                         <td></td>

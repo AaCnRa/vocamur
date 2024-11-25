@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
     //footer.innerHTML = "<p style=\"test-align:right;\">Ce site a été</p>";
 
-    if(location=="index.html" || location==""){
+    /*if(location=="index.html" || location==""){
         header.innerHTML = "\
         <div class=\"p-title\"><h1>RIASEC Project</h1></div>\
         <div>\
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded",function(){
         </div>\
         ";
     }
-    else if(location=="login.html"){
+    else*/ if(location=="login.html"){
         header.innerHTML = "\
         <div class=\"p-title\"><h1>RIASEC Project</h1></div>\
         <div>\
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded",function(){
         header.innerHTML = "\
         <div class=\"p-title\"><h1>RIASEC Project</h1></div>\
         <div>\
-            <div class=\"link\"><a href=\"home.html\">Accueil</a></div>\
+            <div class=\"link\"><a href=\"/\">Accueil</a></div>\
             <div class=\"link\"><a href=\"test.html\">Passer le test</a></div>\
             <div class=\"link\"><a href=\"riasec.html\">RIASEC</a></div>\
             <div class=\"link\"><a href=\"nous.html\">Nous</a></div>\
@@ -49,9 +49,15 @@ document.addEventListener("DOMContentLoaded",function(){
         <div class=\"contact\">\
             <a href=\"mailto:andriamiharinjaracoriolanr.acr@gmail.com\">Mail</a>\
             <a href=\"tel:+261325176665\">Téléphone</a>\
-            <a href=\"http://web.facebook.com\">Facebook</a>\
+            <a href=\"https://www.facebook.com/CoriolanR\" target=\"_blank\" aria-label=\"profil facebook\">\
+                <img src=\"/icons/facebook.svg\" alt=\"facebook\">\
+            </a>\
         </div>\
     ";
+
+    /*
+        <a href=\"https://web.facebook.com\" target=\"_blank\">Facebook</a>
+    */
     /*document.body.appendChild(header);
     this.body.appendChild(main);
     this.body.appendChild(footer);*/
