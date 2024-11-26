@@ -1,0 +1,33 @@
+document.addEventListener("DOMContentLoaded",function(){
+    const locations = {
+        0:{
+            link:"/type-realiste.html",
+            div:document.getElementsByClassName("realistic")[0]
+        },
+        1:{
+            link:"/type-investigateur.html",
+            div:document.getElementsByClassName("investigative")[0]
+        },
+        2:{
+            link:"/type-artiste.html",
+            div:document.getElementsByClassName("artistic")[0]
+        },
+        3:{
+            link:"/type-social.html",
+            div:document.getElementsByClassName("social")[0]
+        },
+        4:{
+            link:"/type-entreprenant.html",
+            div:document.getElementsByClassName("enterprising")[0]
+        },
+        5:{
+            link:"/type-conventionnel.html",
+            div:document.getElementsByClassName("conventional")[0]
+        },
+    }
+    for(let i=0;i<Object.keys(locations).length;i++){
+        locations[i]["div"].addEventListener("click",function(){
+            window.location.replace(locations[i].link);
+        })
+    }
+})

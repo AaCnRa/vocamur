@@ -1,0 +1,5 @@
+AllowOverride All
+
+RewriteEngine on
+
+AddType image/svg+xml svg

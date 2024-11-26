@@ -47,10 +47,14 @@ document.addEventListener("DOMContentLoaded",function(){
     footer.innerHTML="\
     <div>Ce site a été développé par Coriolan.</div>\
         <div class=\"contact\">\
-            <a href=\"mailto:andriamiharinjaracoriolanr.acr@gmail.com\">Mail</a>\
-            <a href=\"tel:+261325176665\">Téléphone</a>\
+            <a href=\"mailto:andriamiharinjaracoriolanr.acr@gmail.com\">\
+                <img class=\"icon\" src=\"/icons/mail-black-svgrepo.svg\" alt=\"Mail\">\
+            </a>\
+            <a href=\"tel:+261325176665\">\
+                <img class=\"icon\" src=\"/icons/telephone-black-svgrepo.svg\" alt=\"Téléphone\">\
+            </a>\
             <a href=\"https://www.facebook.com/CoriolanR\" target=\"_blank\" aria-label=\"profil facebook\">\
-                <img src=\"/icons/facebook.svg\" alt=\"facebook\">\
+                <img class=\"icon\" src=\"/icons/facebook-square-dark-svgrepo.svg\" alt=\"facebook\">\
             </a>\
         </div>\
     ";
