@@ -6,6 +6,7 @@
     <title>RIASEC Project - Test</title>
     <script src="script/script.js"></script>
     <script src="script/test.js"></script>
+    <script src="script/test-pagination.js"></script>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/general.css">
 </head>
@@ -1179,8 +1180,8 @@
                 <h2 class="head-class">Personnalité</h2>
                 <p class="desc-class">
                     Voici une liste de traits de caractère, d’attitudes, de tendances personnelles. Faites une croix dans la case
-correspondant aux énoncés qui s’appliquent à vous, qui décrivent le plus honnêtement possible votre
-façon d’agir.
+                    correspondant aux énoncés qui s’appliquent à vous, qui décrivent le plus honnêtement possible votre
+                    façon d’agir.
                 </p>
 
                 <form class="realistic type">
@@ -1483,7 +1484,12 @@ façon d’agir.
                 </form>
             </div>
 
-            <input type="submit" value="Soumettre" id="submit-test">
+            <div>
+                <input type="button" value="Précédent" id="prev">
+                <input type="button" value="Prochain" id="next">
+                <input type="submit" value="Soumettre" id="submit-test">
+            </div>
+            
             
             <div id="result" class="class content-div">
                 <h2 class="head-class">Compilation du profil personnel</h2>
