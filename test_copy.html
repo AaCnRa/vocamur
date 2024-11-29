@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RIASEC Project - Test</title>
     <script src="script/script.js"></script>
-    <script src="script/test.js"></script>
+    <script src="script/test_copy.js"></script>
     <script src="script/test-pagination.js"></script>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/general.css">
@@ -14,12 +14,6 @@
     <div class="header"></div>
     <div class="main">
         <div class="content other" id="test">
-            <div id="intro" class="class content-div">
-                <h2 class="head-class">Passer un test RIASEC</h2>
-                <p class="desc-class">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque mollitia magni deserunt fugiat provident non eligendi eos sunt omnis? Totam, eos voluptates? Enim repellat molestiae est qui ut voluptates suscipit?
-                </p>
-            </div>
             <div id="activity" class="class content-div">
                 <h2 class="head-class">Intérêts et activités</h2>
                 <p class="desc-class">
@@ -31,16 +25,29 @@
                 <p>
                     Pour remplir cette partie:
                     <br>
-                    <b>
-                        Considérez que vous avez les capacités, les connaissances et la
-                        formation nécessaires pour effectuer ces activités;
-                    </b>
-                    <br>
-                    Tenez compte uniquement de vos goûts.
+                        <b>
+                            Considérez que vous avez les capacités, les connaissances et la
+                            formation nécessaires pour effectuer ces activités;
+                        </b>
+                        <br>
+                        Tenez compte uniquement de vos goûts.
+                    
+                    <!--
+                    <ul style="list-style: none; margin-left: -2rem;">
+                        <dd>
+                            <li><b>Considérez que vous avez les capacités, les connaissances et la
+                            formation nécessaires pour effectuer ces activités.</b></li>
+                        </dd>
+                        <dd>
+                            <li>Tenez compte uniquement de vos goûts.</li>
+                        </dd>
+                    </ul>
+                    -->
                 </p>
 
                 <form class="realistic type">
                     <h3>Réaliste</h3>
+                    <input type="button" value="0" id="iar">
                     <table>
                         <tr>
                             <td>1. Planter, entretenir des arbres, des arbustes, des fleurs ou cultiver le sol.</td>
@@ -108,6 +115,7 @@
                 
                 <form class="investigative type">
                     <h3>Investigateur</h3>
+                    <input type="button" value="0" id="iai">
                     <table>
                         <tr>
                             <td>1. Lire des revues scientifiques ou spécialisées.</td>
@@ -175,6 +183,7 @@
                 
                 <form class="artistic type">
                     <h3>Artiste</h3>
+                    <input type="button" value="0" id="iaa">
                     <table>
                         
                         <tr>
@@ -243,6 +252,7 @@
 
                 <form class="social type">
                     <h2>Social</h2>
+                    <input type="button" value="0" id="ias">
                     <table>
                         <tr>
                             <td>1. S’engager dans des organismes sociaux ou communautaires.</td>
@@ -310,6 +320,7 @@
 
                 <form class="enterprising type">
                     <h3>Entrepreneur</h3>
+                    <input type="button" value="0" id="iae">
                     <table>
                         <tr>
                             <td>1. Vendre un produit ou une idée.</td>
@@ -378,6 +389,7 @@
 
                 <form class="conventional type">
                     <h3>Conventionnel</h3>
+                    <input type="button" value="0" id="iac">
                     <table>
                         <tr>
                             <td>1. Établir des comptes-rendus des dépenses.</td>
@@ -456,6 +468,7 @@
                 
                 <form class="realistic type">
                     <h3>Réaliste</h3>
+                    <input type="button" value="0" id="ior">
                     <table>
                         <tr>
                             <td>1. Mécanicien / mécanicienne d’auto</td>
@@ -523,6 +536,7 @@
 
                 <form class="investigative type">
                     <h3>Investigateur</h3>
+                    <input type="button" value="0" id="ioi">
                     <table>
                         <tr>
                             <td>1. Ingénieur / ingénieure en chimie, physique</td>
@@ -592,6 +606,7 @@
 
                 <form class="artistic type">
                     <h3>Artiste</h3>
+                    <input type="button" value="0" id="ioa">
                     <table>
                         <tr>
                             <td>1. Musicien / musicienne</td>
@@ -659,6 +674,7 @@
 
                 <form class="social type">
                     <h3>Social</h3>
+                    <input type="button" value="0" id="ios">
                     <table>
                         <tr>
                             <td>1. Infirmier / infirmière auxiliaire</td>
@@ -726,6 +742,7 @@
 
                 <form class="enterprising type">
                     <h3>Entrepreneur</h3>
+                    <input type="button" value="0" id="ioe">
                     <table>
                         <tr>
                             <td>1. Agent / agente de publicité (marketing)</td>
@@ -793,6 +810,7 @@
 
                 <form class="conventional type">
                     <h3>Conventionnel</h3>
+                    <input type="button" value="0" id="ioc">
                     <table>
                         <tr>
                             <td>1. Commis-comptable</td>
@@ -871,6 +889,7 @@
 
                 <form class="realistic type">
                     <h3>Réaliste</h3>
+                    <input type="button" value="0" id="ar">
                     <table>
                         <tr>
                             <td>1. Ma capacité à soulever des poids lourds est :</td>
@@ -921,6 +940,7 @@
 
                 <form class="investigative type">
                     <h3>Investigateur</h3>
+                    <input type="button" value="0" id="ai">
                     <table>
                         <tr>
                             <td>1. Mes aptitudes en mathématiques sont :</td>
@@ -968,6 +988,7 @@
 
                 <form class="artistic type">
                     <h3>Artiste</h3>
+                    <input type="button" value="0" id="aa">
                     <table>
                         <tr>
                             <td>1. Ma capacité à me représenter la forme d’objets en deux ou trois dimensions
@@ -1017,6 +1038,7 @@
 
                 <form class="social type">
                     <h3>Social</h3>
+                    <input type="button" value="0" id="as">
                     <table>
                         <tr>
                             <td>1. Mon aptitude à travailler en équipe est :</td>
@@ -1068,6 +1090,7 @@
 
                 <form class="enterprising type">
                     <h3>Entrepreneur</h3>
+                    <input type="button" value="0" id="ae">
                     <table>
                         <tr>
                             <td>1. Ma facilité à m’exprimer en public est :</td>
@@ -1116,6 +1139,7 @@
 
                 <form class="conventional type">
                     <h3>Conventionnel</h3>
+                    <input type="button" value="0" id="ac">
                     <table>
                         <tr>
                             <td>1. Ma capacité à me conformer aux règles établies est :</td>
@@ -1172,6 +1196,7 @@
 
                 <form class="realistic type">
                     <h3>Réaliste</h3>
+                    <input type="button" value="0" id="pr">
                     <table>
                         <tr>
                             <td>1. Je suis conformiste, je me plie facilement aux règlements du milieu où je vis.</td>
@@ -1220,6 +1245,7 @@
 
                 <form class="investigative type">
                     <h3>Investigateur</h3>
+                    <input type="button" value="0" id="pi">
                     <table>
                         <tr>
                             <td>1. J’analyse les idées, les événements, ce qui se passe autour de moi.</td>
@@ -1270,6 +1296,7 @@
 
                 <form class="artistic type">
                     <h3>Artiste</h3>
+                    <input type="button" value="0" id="pa">
                     <table>
                         <tr>
                             <td>1. Mes amis/es me considèrent compliqué/e.</td>
@@ -1320,6 +1347,7 @@
 
                 <form class="social type">
                     <h3>Social</h3>
+                    <input type="button" value="0" id="ps">
                     <table>
                         <tr>
                             <td>1. Quand un problème se pose, je préfère le régler par la discussion et l’entente
@@ -1368,6 +1396,7 @@
 
                 <form class="enterprising type">
                     <h3>Entrepreneur</h3>
+                    <input type="button" value="0" id="pe">
                     <table>
                         <tr>
                             <td>1. L’ambition ne m’effraie pas.</td>
@@ -1416,6 +1445,7 @@
 
                 <form class="conventional type">
                     <h3>Conventionnel</h3>
+                    <input type="button" value="0" id="pc">
                     <table>
                         <tr>
                             <td>1. Je suis maître de moi, d’un calme exemplaire.</td>
@@ -1467,7 +1497,7 @@
             <div>
                 <input type="button" value="Précédent" id="prev">
                 <input type="button" value="Prochain" id="next">
-                <input type="button" value="Soumettre" id="submit-test">
+                <input type="submit" value="Soumettre" id="submit-test">
             </div>
             
             
