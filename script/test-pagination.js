@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded",function(){
     }
     
     const number = classes.length;
-    console.log(number);
+    //console.log(number);
+    console.log(classes[1]);
 
     navBtn.prev.addEventListener("click",function(){
         if(index==5){
@@ -44,6 +45,8 @@ document.addEventListener("DOMContentLoaded",function(){
         navBtn.prev.style.display = index<=1?"none":"";
         navBtn.next.style.display = index>=4?"none":"";
         submit.style.display = index!=4?"none":"";
+
+        scrollTo(top);
     }
     
 })
