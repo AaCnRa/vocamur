@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded",function(){
     }
     else*/ if(location=="login.html"){
         header.innerHTML = "\
-        <div class=\"p-title\"><h1>RIASEC Project</h1></div>\
+        <div class=\"p-title\"><h1>R.I.A.S.E.C</h1></div>\
         <div>\
             <div class=\"link\"><a href=\"index.html\">Revenir à l'accueil</a></div>\
         </div>\
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded",function(){
     }
     else{
         header.innerHTML = "\
-        <div class=\"p-title\"><h1>RIASEC Project</h1></div>\
+        <div class=\"p-title\"><h1>R.I.A.S.E.C</h1></div>\
         <div>\
             <div class=\"link\"><a href=\"/\">Accueil</a></div>\
             <div class=\"link\"><a href=\"test.html\">Passer le test</a></div>\
