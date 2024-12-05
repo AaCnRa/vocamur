@@ -9,6 +9,15 @@
     --attenuate:rgba(255,255,255,0.5);
     text-align: initial;
 }
+body{
+    background-color: var(--second);
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+}
 nav,footer,header{
     display: flex;
     justify-content: space-evenly;
@@ -44,12 +53,21 @@ b{
 a:hover{
     text-shadow: 0px 0px white;
 }
+header{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 nav{
+    height:2em;
     a:hover{
         background-color:var(--third);
     }
 }
 header,nav{
+    z-index: 1;
+    left: 0;
     width: 100%;
     color: #fff;
     background-color: var(--first);
@@ -65,9 +83,6 @@ header,nav{
         align-content: center;
         align-items: center;
     }
-}
-nav{
-    height: 2em; 
 }
 
 footer{
@@ -134,16 +149,6 @@ main{
         width: 100%;
     }
 }
-body{
-    background-color: var(--second);
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    justify-items: center;
-}
-
 .head-login{
     font-size: 2em;
     color: #333;
@@ -165,6 +170,7 @@ hr{
 }
 
 .nous{
+    z-index: 100;
     position:fixed;
     top: 10px;
     right: 10px;
@@ -232,7 +238,6 @@ td,th{
         }
     }
 }
-
 .desc-class{
     line-height: 1.5;
 }
@@ -241,9 +246,10 @@ td,th{
     height: 2lh;
     text-align: center;
 }
-/*.icon{
-    height: 1.2em;
-}*/
+
+.show,.hide{
+    transition: ease 1s;
+}
 @media (max-width:900px) {
     .desc-class{
         text-align: center;

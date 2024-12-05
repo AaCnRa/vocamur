@@ -1,20 +1,15 @@
 document.addEventListener("DOMContentLoaded",function(){
 
     const location = this.location.href.split('/')[3];
-    //console.log(location);
-    //document.head.appendChild('')
-    /*const header = this.createElement('div');
-    const main = this.createElement('div');
-    const footer = this.createElement('div');
-    
-    header.classList.add('header');
-    main.classList.add('main');
-    footer.classList.add('footer');*/
     const header = this.getElementsByTagName('header')[0];
     const footer = this.getElementsByTagName('footer')[0];
-    const nav = this.getElementsByTagName('nav')[0];
+    const main = this.getElementsByTagName('main')[0];
 
+    const nav = this.createElement('nav');
     const aboutUs = document.createElement("div");
+    
+
+    var prevScrollPos = window.pageYOffset;
     aboutUs.classList.add("nous");
     aboutUs.innerHTML = "<a href=\"nous.html\"><img src=\"icons/information.png\"</a>";
     
@@ -62,11 +57,44 @@ document.addEventListener("DOMContentLoaded",function(){
         </div>\
     ";
 
+    header.appendChild(nav);
     header.appendChild(aboutUs);
-    /*
-        <a href=\"https://web.facebook.com\" target=\"_blank\">Facebook</a>
-    */
-    /*document.body.appendChild(header);
-    this.body.appendChild(main);
-    this.body.appendChild(footer);*/
+    header.classList.add("show");
+
+    
+    headerNav();
+    
+
+    window.onscroll = headerNav;
+
+    function headerNav(){
+        var currentScrollPos = window.pageYOffset;
+        if(prevScrollPos>currentScrollPos){
+            //nav.classList.remove("hide");
+            //nav.classList.add("show");
+            header.classList.remove("hide");
+            header.classList.add("show");
+        }
+        else if(prevScrollPos<currentScrollPos){
+            //nav.classList.remove("show");
+            //nav.classList.add("hide");
+            header.classList.remove("show");
+            header.classList.add("hide");
+        }
+
+
+        if(header.classList.contains("show")){
+            //nav.style.top = header.clientHeight+"px";
+            header.style.top = 0;
+            main.style.marginTop = header.clientHeight+"px";
+        }
+        else{
+            //header.style.top = -nav.clientHeight+"px";
+            header.style.top = -header.clientHeight+"px"
+            main.style.marginTop = 0;
+        }
+
+        prevScrollPos = currentScrollPos;
+        //console.log(nav.classList.contains("show"));
+    }
 })
