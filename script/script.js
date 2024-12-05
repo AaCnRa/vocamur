@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded",function(){
     const footer = this.getElementsByTagName('footer')[0];
     const nav = this.getElementsByTagName('nav')[0];
 
+    const aboutUs = document.createElement("div");
+    aboutUs.classList.add("nous");
+    aboutUs.innerHTML = "<a href=\"nous.html\"><img src=\"icons/information.png\"</a>";
+    
     //footer.innerHTML = "<p style=\"test-align:right;\">Ce site a été</p>";
 
     /*if(location=="index.html" || location==""){
@@ -35,13 +39,12 @@ document.addEventListener("DOMContentLoaded",function(){
     else{*/
         header.innerHTML = "<h1>R.I.A.S.E.C</h1>";
     //}
-
+    
     nav.innerHTML = "\
         <div>\
             <div class=\"link\"><a href=\"/\">Accueil</a></div>\
             <div class=\"link\"><a href=\"test.html\">Test</a></div>\
             <div class=\"link\"><a href=\"riasec.html\">RIASEC</a></div>\
-            <div class=\"link\"><a href=\"nous.html\">Nous</a></div>\
             <div class=\"link\"><a href=\"#\">Connection/Inscription</a></div>\
         </div>";
     footer.innerHTML="\
@@ -59,6 +62,7 @@ document.addEventListener("DOMContentLoaded",function(){
         </div>\
     ";
 
+    header.appendChild(aboutUs);
     /*
         <a href=\"https://web.facebook.com\" target=\"_blank\">Facebook</a>
     */
