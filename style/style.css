@@ -9,7 +9,7 @@
     --attenuate:rgba(255,255,255,0.5);
     text-align: initial;
 }
-.header,.footer{
+nav,footer,header{
     display: flex;
     justify-content: space-evenly;
     
@@ -33,7 +33,11 @@
 }
 
 p{
+    line-height: 1.5;
     text-align: justify;
+}
+br{
+    height: 1.5;
 }
 b{
     color: var(--first);
@@ -41,7 +45,8 @@ b{
 a:hover{
     text-shadow: 0px 0px white;
 }
-.header{
+header,nav{
+    width: 100%;
     color: #fff;
     background-color: var(--first);
     a{
@@ -51,6 +56,7 @@ a:hover{
         background-color:var(--third);
     }
     >div{
+        max-width: 900px;
         flex: 2 0;
         display: flex;
         justify-content: space-evenly;
@@ -58,8 +64,11 @@ a:hover{
         align-items: center;
     }
 }
+nav{
+    height: 2em; 
+}
 
-.footer{
+footer{
     font-style: italic;
     background-color:var(--second);
     color:grey;
@@ -82,8 +91,7 @@ a:hover{
         }
     }    
 }
-
-.main{
+main{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -151,10 +159,11 @@ body{
 
 .content-div{
     /*border-top: 2px solid var(--third);*/
-    padding-bottom: 10px;
-    border-bottom: 2px solid var(--third);
-
-
+    /*padding-bottom: 10px;*/
+    /*border-bottom: 2px solid var(--third);*/
+}
+hr{
+    color:var(--third);
 }
 
 
@@ -175,6 +184,10 @@ body{
 }
 .conventional{
     background-color: var(--convent);
+}
+.test{
+    background-color: var(--second);
+    text-align: center;
 }
 
 .inputc{
@@ -202,9 +215,21 @@ td,th{
     table{
         height: 400px;
         background-color: var(--attenuate);
+        td{
+            text-align: center;
+            height:2lh;
+        }
     }
 }
 
+.desc-class{
+    line-height: 1.5;
+}
+.type>input,#test>div>input {
+    width: 100%;
+    height: 2lh;
+    text-align: center;
+}
 /*.icon{
     height: 1.2em;
 }*/
@@ -238,7 +263,6 @@ dl{
         box-shadow: 0px 0px 2px var(--third);
     }
     li:hover{
-        z-index: 2;
         transition:ease 75ms;
         /*transform:translateX(20px);*/
         padding-right: 80px;

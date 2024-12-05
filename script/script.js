@@ -10,21 +10,21 @@ document.addEventListener("DOMContentLoaded",function(){
     header.classList.add('header');
     main.classList.add('main');
     footer.classList.add('footer');*/
-    const header = this.getElementsByClassName('header')[0];
-    const footer = this.getElementsByClassName('footer')[0];
-    const main = this.getElementsByClassName('main')[0];
+    const header = this.getElementsByTagName('header')[0];
+    const footer = this.getElementsByTagName('footer')[0];
+    const nav = this.getElementsByTagName('nav')[0];
 
     //footer.innerHTML = "<p style=\"test-align:right;\">Ce site a été</p>";
 
     /*if(location=="index.html" || location==""){
         header.innerHTML = "\
-        <div class=\"p-title\"><h1>RIASEC Project</h1></div>\
+        <div class=\"p-title\"><h1>R.I.A.S.E.C</h1></div>\
         <div>\
             <div class=\"link\"><a href=\"login.html\">Se connecter</a></div>\
         </div>\
         ";
     }
-    else*/ if(location=="login.html"){
+    else if(location=="login.html"){
         header.innerHTML = "\
         <div class=\"p-title\"><h1>R.I.A.S.E.C</h1></div>\
         <div>\
@@ -32,18 +32,18 @@ document.addEventListener("DOMContentLoaded",function(){
         </div>\
         ";
     }
-    else{
-        header.innerHTML = "\
-        <div class=\"p-title\"><h1>R.I.A.S.E.C</h1></div>\
+    else{*/
+        header.innerHTML = "<h1>R.I.A.S.E.C</h1>";
+    //}
+
+    nav.innerHTML = "\
         <div>\
             <div class=\"link\"><a href=\"/\">Accueil</a></div>\
-            <div class=\"link\"><a href=\"test.html\">Passer le test</a></div>\
+            <div class=\"link\"><a href=\"test.html\">Test</a></div>\
             <div class=\"link\"><a href=\"riasec.html\">RIASEC</a></div>\
             <div class=\"link\"><a href=\"nous.html\">Nous</a></div>\
-        </div>\
-        ";
-    }
-
+            <div class=\"link\"><a href=\"#\">Connection/Inscription</a></div>\
+        </div>";
     footer.innerHTML="\
     <div>Ce site a été développé par Coriolan.</div>\
         <div class=\"contact\">\

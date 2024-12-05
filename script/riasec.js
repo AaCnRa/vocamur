@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded",function(){
     }
     for(let i=0;i<Object.keys(locations).length;i++){
         locations[i]["div"].addEventListener("click",function(){
-            window.location.replace(locations[i].link);
+            window.location.assign(locations[i].link);
         })
     }
 })

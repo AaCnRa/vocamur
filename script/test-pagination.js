@@ -41,8 +41,9 @@ document.addEventListener("DOMContentLoaded",function(){
         actual();
     })
     submit.addEventListener("click",function(){
-        index[1]++;
-        index[1]%=number;
+        /*index[1]++;
+        index[1]%=number;*/
+        index[1]=5;
         actual();
     })
     
@@ -65,9 +66,9 @@ document.addEventListener("DOMContentLoaded",function(){
         navBtn.prev.value = index[1]==5?"Revisionner les réponses":"Précédent";
         navBtn.prev.style.display = index[1]==0||index[1]==1&&index[0]==0?"none":"";
         navBtn.next.style.display = index[1]==5||index[1]==4&&index[0]==5?"none":"";
-        submit.style.display = index[1]!=4||index[0]!=5?"none":"";
+        submit.style.display = index[1]!=4||index[0]!=5?"":"";
 
-        scrollTo(top);
+        //scrollTo(top);
     }
     
 })

@@ -53,7 +53,7 @@ async function countChecked(cells,modules,values){
         values[i]=0;
         //console.log(modules[i].length);
         for(let j=0;j<modules[i].length;j++){
-            values[i]+=modules[i][j].type=="checkbox"?modules[i][j].checked:parseInt(modules[i][j].value);
+            values[i]+=modules[i][j].type=="checkbox"?modules[i][j].checked:/*parseInt(modules[i][j].value)*/1;
         }
         
         if(isNaN(values[i])){
