@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RIASEC Project - Login</title>
+    <title>VOCAMUR - Login</title>
     <script src="/script/script.js"></script>
     <script src="/script/script-login.js"></script>
     <link rel="stylesheet" href="/style/style.css">
@@ -11,14 +11,18 @@
 </head>
 <body>
     <header></header>
-    <nav></nav>
     <main>
         <div class="content auth-container">
             <h1 class="head-login">Authentification</h1>
             <form id="login-form">
-                <input type="text" id="username" placeholder="Nom d'utilisateur" required>
-                <input type="password" id="password" placeholder="Mot de passe" required>
-                <button type="submit">Se connecter</button>
+                <div>
+                    <label for="username">Nom d'utilisateur</label><br><input type="text" id="username" placeholder="Nom d'utilisateur" required><br>
+                    <label for="password">Mot de passe</label><br><input type="password" id="password" placeholder="Mot de passe" required><br>
+                </div>
+                <div>
+                    <button type="submit">Se connecter</button>
+                    <a href="/signup.html">S'inscrire</a>
+                </div>
             </form>
         </div>
     </main>

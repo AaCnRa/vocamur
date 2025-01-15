@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOCAMUR - Inscription</title>
+    <script src="/script/script.js"></script>
+    <script src="/script/signup.js"></script>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/general.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="content auth-container">
+            <h1 class="head-login">Inscription</h1>
+            <form id="signup-form">
+                <div>
+                    <label for="name">Nom</label><br><input type="text" name="name" id="name" placeholder="Nom" required><br>
+                    <label for="firstname">Prénom(s)</label><br><input type="text" name="firstname" id="firstname" placeholder="Votre(Vos) prénom(s)"><br>
+                    <label for="username">Nom d'utilisateur <br><i>(caractères alpha-numériques, point '.' ou tiret bas '_' seulement)</i></label><br><input type="text" id="username" placeholder="Nom d'utilisateur" pattern="[a-zA-Z0-9._]+" required><br>
+                    <label for="password">Mot de passe (8 caractères minimum)</label><br><input type="password" id="password" placeholder="Mot de passe" class="password" minlength="8" required><br>
+                    <label for="pwcheck">Vérification du mot de passe</label><br><input type="password" name="pwcheck" id="pwcheck" placeholder="Le même mot de passe que ci-dessus" class="password" required>
+                </div>
+                
+                <div>
+                    <button type="reset">Annuler</button>
+                    <button type="submit">Soumettre</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

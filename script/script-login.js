@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded",function(){
             .catch(error => console.error('Erreur lors de la lecture du fichier JSON:', error));
             
             
-            window.location.href = 'riasec.html';
+            window.location.href = 'index.html';
         } else {
             alert('Nom d\'utilisateur ou mot de passe incorrect');
         }

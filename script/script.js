@@ -8,40 +8,32 @@ document.addEventListener("DOMContentLoaded",function(){
     const nav = this.createElement('nav');
     const aboutUs = document.createElement("div");
     
+    //document.getElementsByTagName('title')[0].textContent = "VOCAMUR";
 
     var prevScrollPos = window.pageYOffset;
     aboutUs.classList.add("nous");
     aboutUs.innerHTML = "<a href=\"nous.html\"><img src=\"icons/information.png\"</a>";
     
-    //footer.innerHTML = "<p style=\"test-align:right;\">Ce site a été</p>";
+    header.innerHTML = "<h1>VOCAMUR</h1>";
 
-    /*if(location=="index.html" || location==""){
-        header.innerHTML = "\
-        <div class=\"p-title\"><h1>R.I.A.S.E.C</h1></div>\
-        <div>\
-            <div class=\"link\"><a href=\"login.html\">Se connecter</a></div>\
-        </div>\
-        ";
-    }
-    else if(location=="login.html"){
-        header.innerHTML = "\
-        <div class=\"p-title\"><h1>R.I.A.S.E.C</h1></div>\
-        <div>\
-            <div class=\"link\"><a href=\"index.html\">Revenir à l'accueil</a></div>\
-        </div>\
-        ";
-    }
-    else{*/
-        header.innerHTML = "<h1>R.I.A.S.E.C</h1>";
-    //}
-    
-    nav.innerHTML = "\
+    if(location=="signup.html"||location=="login.html"){
+        nav.innerHTML = "\
         <div>\
             <div class=\"link\"><a href=\"/\">Accueil</a></div>\
-            <div class=\"link\"><a href=\"test.html\">Test</a></div>\
-            <div class=\"link\"><a href=\"riasec.html\">RIASEC</a></div>\
-            <div class=\"link\"><a href=\"#\">Connection/Inscription</a></div>\
+            <div class=\"link\"><a href=\"/test.html\">Test</a></div>\
+            <div class=\"link\"><a href=\"/riasec.html\">RIASEC</a></div>\
         </div>";
+    }
+    else{
+        nav.innerHTML = "\
+        <div>\
+            <div class=\"link\"><a href=\"/\">Accueil</a></div>\
+            <div class=\"link\"><a href=\"/test.html\">Test</a></div>\
+            <div class=\"link\"><a href=\"/riasec.html\">RIASEC</a></div>\
+            <div class=\"link\"><a href=\"/login.html\">Connection/Inscription</a></div>\
+        </div>";
+    }
+        
     footer.innerHTML="\
     <div>Ce site a été développé par Coriolan.</div>\
         <div class=\"contact\">\
@@ -66,7 +58,6 @@ document.addEventListener("DOMContentLoaded",function(){
     
 
     window.onscroll = headerNav;
-
     function headerNav(){
         var currentScrollPos = window.pageYOffset;
         if(prevScrollPos>currentScrollPos){
