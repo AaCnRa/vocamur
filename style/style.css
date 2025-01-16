@@ -285,6 +285,21 @@ td,th{
 .show,.hide{
     transition: ease 1s;
 }
+
+.quotation{
+    background-color: var(--attenuate);
+    color: var(--third);
+    font-style: italic;
+    font-size: smaller;
+    letter-spacing: 1px;
+    padding: 1em 3em;
+    box-shadow:var(--accentuate) 0px 0px 2px 2px;
+    border-radius: 0.5em;
+    li{
+        margin-bottom: 0.5em
+    };
+}
+
 @media (max-width:900px) {
     .desc-class{
         text-align: center;
